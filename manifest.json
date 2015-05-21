@@ -2,7 +2,7 @@
     "name": "Welcome to Shibuya APK!",
         "short_name": "shibuya",
         "icons": [{
-            "src": "images/shibuya_apk.png",
+            "src": "images/new_icon.png",
             "sizes": "144x144",
             "type": "image/png"
         }],
