@@ -12,9 +12,28 @@
         <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
         <meta name="theme-color" content="#95C21E">
+        <!-- Service worker -->
+        <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js', {
+                scope: '.'
+            }).then(function(registration) {
+                    // 登録成功
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }).catch(function(err) {
+                        // 登録失敗 :(
+                    console.log('ServiceWorker registration failed: ', err);
+            });
+        } 
+        </script>
     </head>
     <body>
         <h1 id="hello">Hello!</h1>
         <p>Welcome to Shibuya apk.</p>
+        <div>
+            <p><img src="images/1.jpg"></div></p>
+            <p><img src="images/2.jpg"></div></p>
+            <p><img src="images/3.jpg"></div></p>
+        </div>
     </body>
 </html>
