@@ -1,7 +1,7 @@
 // Cache APIが一部未実装なのでポリフィルをロード
 importScripts('serviceworker-cache-polyfill.js');
 
-ACHE_KEY = 'service-worker-playground-v1';
+CACHE_KEY = 'service-worker-playground-v1';
 
 self.addEventListener('install', function (e) {
 
